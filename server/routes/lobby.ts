@@ -2,7 +2,7 @@
  * @file API endpoints for managing lobbies
  * @author Max Caplan
  */
-import express, { Request } from "express";
+import express from "express";
 import { TypedRequestBody } from "./types";
 
 const router = express.Router();

@@ -56,6 +56,9 @@ export default class GameServer {
   createLobby(name: string): Lobby {
     const lobby = new Lobby(name);
     this.lobbies.push(lobby);
+    lobby.getPlayers().then((players) => {
+      console.log(players);
+    });
     return lobby;
   }
 
